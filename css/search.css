@@ -1,0 +1,304 @@
+ /* code css pour l'icone recherche */
+ .open_search{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.search{
+    /* z-index: 1; */
+    position: relative;
+    top: 6rem;
+    background-color: rgb(26, 22, 22);
+    width: 100%;
+    height: auto;
+    margin-bottom: 4.5rem;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+
+#search-content{
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    margin: auto;
+    width: 23rem;
+    height: 2.8rem;
+    border-radius: 30px;
+    padding: 0px 5px;
+    margin-bottom: 3rem;
+    margin-top: 4rem ;
+}
+
+#article-search{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 14rem, 1fr)); /* 4 colonnes de largeur égale */
+    gap: 16px; /* Espace entre les éléments de la grille */
+    /* padding: auto; Espace intérieur de la grille */
+    overflow-y: hidden;
+}
+
+#productname{
+    position: relative;
+    outline: none;
+    border: none;
+    width: 90%;
+    background-color: transparent;
+
+}
+
+.article-content{
+    max-width: 15rem;
+    background-color: gainsboro;
+     height: auto;
+     display: flex;
+     flex-direction:column;
+     gap:1px;
+}
+
+
+@media(max-width:712px){ 
+
+    
+    #newh{
+       width: 16rem;
+   } 
+   #newhc{
+     width: 19rem;
+   }
+   
+   #article-search{
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+        gap: 15px; /* Espace entre les éléments de la grille */
+       padding: 5px; /* Espace intérieur de la grille */
+    /* align-items: center; */
+        /* gap:1rem; */
+       /* padding: 2rem 1rem 0px 1rem; */
+       overflow: hidden;
+       height: auto;
+      
+   }
+   
+   .article-content{
+       width: 14rem;    
+   }
+   
+   }
+   /* fin responsive 712px */
+
+@media(max-width:480px){
+    .search{
+        padding: 0px;
+    } 
+    #article-search{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 13rem, 1fr)); /* 4 colonnes de largeur égale */
+        gap: 16px; /* Espace entre les éléments de la grille */
+        padding: 7px; /* Espace intérieur de la grille */
+       align-items: center;
+         /* gap:1rem; */
+        /* padding: 2rem 1rem 0px 1rem; */
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    .article-content{
+        height: auto;
+        width: 14rem;      
+    }
+
+}    
+/* fin responsive 480px */
+
+@media(max-width:411px){
+    .search{
+        padding: 0px;
+    } 
+    #article-search{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 11rem, 1fr)); /* 4 colonnes de largeur égale */
+        gap: 14px; /* Espace entre les éléments de la grille */
+        padding: 7px; /* Espace intérieur de la grille */
+       align-items: center;
+         /* gap:1rem; */
+        /* padding: 2rem 1rem 0px 1rem; */
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    .article-content{
+        height: auto;
+        width: 12rem;      
+    }
+
+}    
+/* fin responsive 411px */
+
+@media(max-width:393px){
+    .search{
+        padding: 0px;
+    } 
+    #article-search{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 10rem, 1fr)); /* 4 colonnes de largeur égale */
+        gap: 14px; /* Espace entre les éléments de la grille */
+        padding: 7px; /* Espace intérieur de la grille */
+       align-items: center;
+         /* gap:1rem; */
+        /* padding: 2rem 1rem 0px 1rem; */
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    .article-content{
+        height: auto;
+        width: 11.5rem;      
+    }
+
+}    
+/* fin responsive 393px */
+
+
+@media(max-width:360px){ 
+
+    #search-content{
+       width: 90%;
+    }
+   
+    #article-search{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 9rem, 1fr)); /* 4 colonnes de largeur égale */
+        gap: 16px; /* Espace entre les éléments de la grille */
+        padding: auto; /* Espace intérieur de la grille */
+       align-items: center;
+         /* gap:1rem; */
+        /* padding: 2rem 1rem 0px 1rem; */
+        overflow-y: hidden;
+        height: auto;
+    }
+    
+    
+    .articles{
+        padding: 5px;
+    }
+    .article-content{
+        height: auto;
+        width: 10rem;      
+    }
+
+    .content-img{
+        width: 100%;
+        height: 10rem;
+    }
+    
+    .content-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .titre{
+        padding: 0.5rem 5px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    
+    .article-content p{
+        font-size: 0.8rem;
+        width: 95%;
+        height: 2.5rem;
+        margin: auto;
+        
+    }
+    
+    .article-content p::after{
+        content: ".";
+    }
+    
+    .article-footer{
+       
+        padding: 1.3rem 0px 1rem 0px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .prix{
+        color: red;
+        font-size:0.8rem ;
+    }
+    
+    .voir{
+        font-size: 0.7rem;
+        padding: 0.2rem 0.3rem;
+        
+    }
+    
+    .voir:hover{
+        transform: scaleX(1.1);
+    }
+
+    
+.text-cover_enfant{
+    position:absolute;
+    top: 15rem ;
+    left: 1.5rem ;
+    z-index: 12;
+    width: 18rem;
+    max-width: 18rem;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    border-radius: 40px;
+    
+    }
+
+    .text-cover_enfant h3{
+        font-size: 0.9rem;
+    }
+
+    .text-cover_enfant {
+        font-size: 0.8rem;
+    }
+
+} /* fin responsive 360px */
+ 
+
+@media(max-width:320px){ 
+
+    #search-content{
+       width: 90%;
+    }
+   
+    #article-search{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px; /* Espace entre les éléments de la grille */
+        /* padding: auto; /* Espace intérieur de la grille */
+       /* align-items: center;  */
+         /* gap:1rem; */
+        /* padding: 2rem 1rem 0px 1rem; */
+        overflow-y: hidden;
+        height: auto;
+    }
+    
+    
+    .articles{
+        padding: 5px;
+    }
+    .article-content{
+        height: auto;
+        width: 12rem;      
+    }
+}/* fin responsive 320px */

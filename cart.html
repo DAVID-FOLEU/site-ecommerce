@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Achetez des produits de haute qualité à prix abordables sur notre site de e-commerce. Livraison rapide et service client exceptionnel.">
+    <meta name="keywords" content="e-commerce, achat en ligne, produits de qualité, livraison rapide, meilleur vetement">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Nom de votre boutique - Produits de qualité à prix abordables">
+    <meta property="og:description" content="Découvrez une large sélection de produits de qualité à prix abordables sur notre site de e-commerce.">
+    <meta property="og:image" content="../html/index.html">
+    <meta property="og:url" content="https://www.onligneshopcom">
+    <link rel="icon" type="image/png" href="../images/logo.png"> <!--css pour afficher le logo sur le navigateur-->
+    <title>Panier</title>
+    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="..\css\cart.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="..\js\connect.js"  async></script>
+    
+</head>
+
+<body>
+    <header>
+        <a href="../html/boutique.html" class="logo"><img src="../images/logo.png" alt="logo"/></a>
+        <ul class="navbar">
+            <li><a href="../html/boutique.html" class="active">accueil</a></li>
+            <li>
+                <a href="../html/homme.html">hommes<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="submenu">
+                    <li><a href="../html/vetements_homme.html">Vêtements<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/chaussures_homme.html">Chaussures<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/accessoires_homme.html">Accessoires<i class="ri-arrow-right-line"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../html/femme.html">femmes<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="submenu">
+                    <li><a href="../html/vetements_femme.html">Vêtements<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/chaussures_femme.html">Chaussures<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/accessoires_femme.html">Accessoires<i class="ri-arrow-right-line"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../html/enfant.html">enfants<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="submenu">
+                    <li><a href="../html/vetements_enfant.html">Vêtements<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/chaussures_enfant.html">Chaussures<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/accessoires_enfant.html">Accessoires<i class="ri-arrow-right-line"></i></a></li>
+                </ul>
+            </li>
+            <li><a href="../html/propos.html">a propos</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="../html/search.html"><i class="ri-search-line"></i></a>
+            <i class="ri-user-line"></i>
+            <a href="../html/cart.html"><i class="ri-shopping-cart-line"><span id="nbr">0</span></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+         <div class="connect">
+             <div class="form-connect sign-up">
+                 <form action="#">
+                    <h1> s'inscrire</h1>
+                   
+                    <div class="entrer">
+                        <input type="text" placeholder="User Name"  id="name"> required>
+                    </div>
+                    <div class="entrer">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="entrer">
+                     <input type="password" placeholder="password" id="password" required>
+                     <i class="ri-eye-close-fill"></i>
+                    </div>
+                   <div class="entrer"> Confirmer le mots de passe:<br>
+                     <input type="password" placeholder=" Confirm password"></div>
+                     
+                 <button type="submit" id="sign-up">s'inscrire</button>
+                 <div class="reseau">
+                     <i class="ri-facebook-circle-line"></i>
+                     <i class="ri-google-fill"></i>
+                     <i class="ri-linkedin-box-fill"></i>
+                 </div>
+                 </form>
+             </div>
+
+               <div class="form-connect login-form">
+                   <form action="#">
+                       <h1>se connecter</h1>
+                       <div class="entrer">
+                           <input type="text" placeholder="User Name"  id="name" required >
+                       </div>
+                       <div class="entrer">
+                        <input type="password" placeholder="password" id="password" required>
+                        <i class="ri-eye-close-fill"></i>
+                       </div>
+                      <div class="remember">
+                        <div><input type="checkbox">Memoriser </div>
+                        <a href="#"> mots de passe oublié?</a> 
+                    </div>
+
+                    <button type="submit" id="login">connecter</button>
+                    <div class="reseau">
+                        <i class="ri-facebook-circle-line"></i>
+                        <i class="ri-google-fill"></i>
+                        <i class="ri-linkedin-box-fill"></i>
+                    </div>
+                   </form>
+             </div>
+
+             <div class="toggle-container">
+                 <div class="toggle">
+
+                    <div class="toggle-panel sms-left">
+                        <div class="logo-form"><img src="../images/logo.png" alt="logo" ></div>
+                        <p> avez vous deja un compte ?<br> connecter vous et acceder a votre espace. </p><br>
+                        <button>Se connecter <i class="ri-arrow-right-line"></i></button>
+                    </div>
+
+                     <div class="toggle-panel sms-form">
+                         <div class="logo-form"><img src="../images/logo.png" alt="logo" ></div>
+                         <p>Vous n'avez pas encore de compte? <br>inscrivez vous et rejoinez notre univers. </p><br>
+                         <button>S'inscrire <i class="ri-arrow-right-line"></i></button>
+                     </div> 
+                </div>
+            </div>  
+         </div>
+      
+
+         
+    <div class="product-details">
+        <h1>MON PANIER</h1><br><br>
+            <div id="product-container">
+               <!-- <div id="product-info">
+                   <div class="content-img"  >
+                         <img src="../images/bt1.jpg" id="homme-image" alt="${homme.nom}">
+                   </div>
+                  <div class="article-content">
+                      <div class ="article-head"><h3 id="titre">t-shirt</h3>
+                        <i class="ri-delete-bin-2-line" ></i>
+                      </div>
+                     
+                      <div class="couleur-content">
+                        couleur  : <div class="couleur" data-color="white" id="blanc"></div>
+                      </div>
+                     
+                      <div class="taille">
+                          taille :  <span class="size-option">L</span> 
+                      </div>
+                      
+                      <div class="article-footer">
+                        <div> Quantités : <input type="number"  min="1" id="quantity"> </div>
+                        <div class="montant">
+                           MONTANT <span class="montant-som"  id="prix">0</span> fcfa
+                        </div> 
+                      </div>  
+                  </div> 
+                </div>  -->  
+                   
+              </div>  
+              <p id="vide"> votre panier est vide. </p> 
+              <br>
+              <hr>
+              <div class="panier_footer">
+                <button onclick="viderPanier()">VIDER LE PANIER</button>
+                 <div> TOTAL  : <span class="total_articles">7</span> ARTICLES. <P>      </P> PRIX : <span class="allprice">10000</span> FCFA</div> 
+              </div> 
+         </div>         
+
+
+         <h1>Formulaire de Commande</h1>
+         <form id="orderForm">
+             <label for="name">Nom :</label>
+             <input type="text" id="nom" required><br><br>
+     
+             <label for="phone">Numéro de téléphone :</label>
+             <input type="tel" id="phone" required><br><br>
+     
+             <button type="button" id="orderButton">Commander</button>
+         </form>
+
+
+
+          
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>À Propos</h2>
+                <p>Notre boutique en ligne propose une large sélection de produits de qualité à des prix compétitifs. Nous nous engageons à offrir un excellent service client.</p>
+            </div>
+           
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:contact@votresite.com">contact@onligneshop.com</a></p>
+                <p>Téléphone: <a href="tel:+237655288528">+237 655 28 85 28</a></p>
+                <p>Adresse: Rue BARNABE Akwa, Douala Cameroun</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Suivez-Nous</h2>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-tiktok-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p> 2023 tous droits sont reservés par le FUHRER ROSSI  &copy</p>
+        </div>
+        </footer>
+
+
+    <script >
+     
+
+      // Ici, vous pouvez récupérer les détails du produit à partir d'une API ou d'une base de données
+      function getCart() {
+        let cart = localStorage.getItem("cart");
+        if(cart == null){
+          return  [];
+        }else{  
+        return  JSON.parse(cart); 
+      }
+    }
+
+    // Fonction pour sauvegarder le panier dans le localStorage
+    function savetocart(cart) {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+
+     
+      
+ 
+
+// Fonction pour afficher le panier
+function afficherPanier() {
+    let cart = getCart();
+
+     // enlever le paragraphe panier vide a l'ajout d'element dans le panier
+     if( cart == null){
+      document.querySelector('#vide').style.display = 'block';
+      }else{
+        document.querySelector('#vide').style.display = ' none';
+      };
+
+    const panierElement = document.querySelector('#product-container');
+     
+    panierElement.innerHTML = ''; // Vider le conteneur avant d'ajouter les produits
+     
+    cart.forEach(produit => {
+        
+        panierElement.innerHTML += `
+            <div id="product-info" data-id="${produit.id}" data-couleur="${produit.couleur}" data-taille="${produit.taille}">
+                <div class="content-img">
+                    <img src="${produit.src}" id="homme-image" alt="${produit.nom}">
+                </div>
+                <div class="article-content">
+                    <div class="article-head">
+                        <h3 id="titre">${produit.nom}</h3>
+                        <i class="ri-delete-bin-2-line" ></i> <!-- Ajout de la classe close-btn -->
+                    </div>
+                    <div class="couleur-content">
+                        couleur : <div class="couleur" style="background-color:${produit.couleur}" id="${produit.couleur}"></div>
+                    </div>
+                    <div class="taille">
+                        taille : <span class="size-option">${produit.taille}</span>
+                    </div>
+                    <div class="article-footer">
+                        <div> Quantités : <input type="number" value="${produit.quantite}" min="${produit.quantite}" id="quantity"> </div>
+                        <div class="montant">
+                            MONTANT: <span class="montant-som" id="prix">${produit.prix * produit.quantite}</span> fcfa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `});
+             // Met à jour l'affichage
+             affichenbresup() ; 
+
+
+                  
+// code pour afficher le prix total des articles dans le panier
+        function getTotalprice(){
+        let cart = getCart() ;
+        let total = 0;
+        let prix = 0;
+        let qte = 0;
+        for(let produit of cart){
+            prix =  parseFloat(produit.prix) ;
+            qte =   parseFloat(produit.quantite) ;
+            if(!isNaN(prix) && !isNaN(qte)){
+           total += qte * prix;
+        }
+    }
+        return total ;
+    }
+
+    function afficheprixtotal(){
+       let allprice= document.querySelector(".allprice");
+        allprice.textContent = getTotalprice();
+      }
+
+  // mise a jour du prix total
+   afficheprixtotal();
+
+ // mise a jour du  total
+affichetolalarticles();
+
+
+   
+}
+
+// Appel initial pour afficher le panier
+afficherPanier();
+ 
+
+
+// Fonction pour supprimer un produit du panier
+function supprimerProduit(id, couleur, taille){
+        // Récupérer le panier actuel du localStorage
+        let panier = JSON.parse(localStorage.getItem("cart"));
+       
+        if (panier) {
+      // Filtrer le panier pour enlever le produit correspondant à l'id, la couleur et la taille
+    // ca filtre aussi les produits dont la taille est null
+      panier = panier.filter(produit => 
+         produit.id !== id && 
+         (produit.couleur !== couleur || (produit.taille !== taille && produit.taille !== null))
+     );
+
+      // Sauvegarder à nouveau le panier dans le localStorage
+      localStorage.setItem("cart", JSON.stringify(panier));
+    }
+}
+
+    // Attacher l'événement de suppression au clic sur l'icône
+    document.querySelectorAll('.ri-delete-bin-2-line').forEach(deleteBtn => {
+        deleteBtn.addEventListener('click', (e) => {
+            // Récupérer les données de l'élément parent (produit)
+            const productInfo = e.target.closest('#product-info');
+            const id = productInfo.getAttribute('data-id');
+            const couleur = productInfo.getAttribute('data-couleur');
+            const taille = productInfo.getAttribute('data-taille');
+
+           
+            // Appeler la fonction pour supprimer le produit
+            supprimerProduit(id, couleur, taille);
+
+            // Supprimer visuellement l'élément du DOM (facultatif)
+            productInfo.remove();
+
+            // Appel initial pour afficher le panier
+            // afficherPanier();
+             // Met à jour l'affichage
+             affichenbresup() ; 
+
+
+                  
+// code pour afficher le prix total des articles dans le panier
+        function getTotalprice(){
+        let cart = getCart() ;
+        let total = 0;
+        let prix = 0;
+        let qte = 0;
+        for(let produit of cart){
+            prix =  parseFloat(produit.prix) ;
+            qte =   parseFloat(produit.quantite) ;
+            if(!isNaN(prix) && !isNaN(qte)){
+           total += qte * prix;
+        }
+    }
+        return total ;
+    }
+
+    function afficheprixtotal(){
+       let allprice= document.querySelector(".allprice");
+        allprice.textContent = getTotalprice();
+      }
+
+  // mise a jour du prix total
+   afficheprixtotal();
+
+ // mise a jour du  total
+affichetolalarticles();
+
+
+            });
+    
+     });
+
+  
+    
+             
+
+
+
+// Fonction pour vider le panier
+function viderPanier() {
+    // Effacer le panier dans le localStorage
+    localStorage.removeItem('cart');
+
+    const panierElement = document.querySelector('#product-container');
+    // panierElement.innerHTML = ''; // Vider le conteneur avant d'ajouter les produit
+    
+         // Mettre à jour l'affichage
+          afficherPanier();
+
+    panierElement.innerHTML =` <p> votre panier est vide ! </p>`;
+    
+}
+
+
+
+
+function affichenbresup(){
+            const nbrProduitsCart = document.querySelector("#nbr");
+            let nbrProduits = getNbreproduits();
+             nbrProduitsCart.innerHTML = nbrProduits;
+             localStorage.setItem("nbre", JSON.stringify(nbrProduits));
+            }
+     
+
+ // code pour afficher le nombre d'articles dans le panier sur l'icone panier
+ function getnbre() {
+            let nbre = localStorage.getItem("nbre");
+            if(nbre == null){
+              return  [];
+            }else{  
+            return  JSON.parse(nbre); 
+          }
+        }
+        
+          function affichenbre(){
+            const nbrProduitsCart = document.querySelector("#nbr");
+            let nbrProduits = getnbre();
+             nbrProduitsCart.innerHTML = nbrProduits;
+            }
+              // Met à jour l'affichage
+            affichenbre() ;  
+
+      
+      // code pour afficher la quantité total d'articles dans le panier
+       function getNbreproduits(){
+        let cart = getCart() ;
+        let number = 0;
+        for(let produit of cart){
+            number += produit.quantite ;
+        }
+        return number ;
+    }
+       
+    function affichetolalarticles(){
+       let totalarticles = document.querySelector(".total_articles");
+       let total=  getNbreproduits() ;
+       totalarticles.innerHTML = total;
+    }
+       // Met à jour l'affichage
+    affichetolalarticles();
+  
+
+    let numcommande= getnumcommande();
+    // Fonction pour créer un message WhatsApp
+    function createWhatsAppMessage(nom, phone) {
+            let cart = getCart();
+            let numproduit= 1;
+           
+            let total=0;
+          let message = `*COMMANDE N°${numcommande}* *DE* *Mr ${nom}*  \n (*Tel: ${phone}) :* \n\n\n`;
+            cart.forEach(produit => {
+
+                if(produit.taille == null){
+                  produit.taille="Non specifiée";
+                }
+                
+               total += parseInt(produit.quantite) * parseInt(produit.prix) ;
+           
+                message += `${numproduit}) *${produit.nom} :* \n *- Taille :* ${produit.taille} ,\n *- Couleur :* ${produit.couleur},\n *- Quantité(s) :* ${produit.quantite},\n *- Prix :* ${produit.prix * produit.quantite} fcfa *.* \n\n`;
+                numproduit++ ;
+              });
+
+             message += `\n\n *PRIX TOTAL*: *${total}* *FCFA*`;
+           
+           
+            return encodeURIComponent(message);
+           
+        }
+             
+
+     // Fonction pour sauvegarder le numero de la commande dans le localStorage
+    function savetolocal(numcommande){
+        localStorage.setItem("numcommande", JSON.stringify(numcommande));
+    }
+    
+    // Fonction pour récupérer le numero de la commande depuis le localStorage
+    function getnumcommande(){
+        let numcommande = localStorage.getItem("numcommande");
+        if(numcommande == null){
+          return 0;
+        }else{  
+        return  JSON.parse(numcommande); 
+      }
+    }
+    
+
+        // Événement de clic sur le bouton "Commander"
+        document.getElementById('orderButton').addEventListener('click', ()=> {
+            let nom = document.querySelector("#orderForm #nom").value;
+            let phone = document.getElementById('phone').value;
+              // Vérification du format du numéro de téléphone
+            const phoneRegex = /^[0-9]{9}$/; // Exemple de regex pour un numéro de 10 chiffres
+                
+            nom = nom.toUpperCase();  //mettre le nom est majuscule
+           
+             if(nom== "" || phone== ""){
+               alert("veuillez renseigner les informations de la commande !");
+             }if(!phoneRegex.test(phone)){
+              alert("Veuillez renseigner un numéro de téléphone valide !");
+          }else{
+              numcommande = numcommande + 1 ;
+            localStorage.setItem("numcommande", JSON.stringify(numcommande));
+
+            // Créer le message WhatsApp
+            let whatsappNumber = '237655288528';
+            let message = createWhatsAppMessage(nom, phone);
+            let whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+
+            // Ouvrir WhatsApp avec le message pré-rempli
+            window.open(whatsappUrl, '_blank');
+            alert(`Mr ${nom} , votre commande a bien été recu !`);
+             }
+        });
+    </script>
+     <script src="..\js\script.js" async></script>
+     <script src="..\js\addcart.js" async></script>
+     <script src="..\js\produits.js" async></script>
+     <script src="..\js\connect.js" async></script>   
+     
+</body>
+</html>

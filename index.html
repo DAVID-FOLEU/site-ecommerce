@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Achetez des produits de haute qualité à prix abordables sur notre site de e-commerce. Livraison rapide et service client exceptionnel.">
+    <meta name="keywords" content="e-commerce, achat en ligne, produits de qualité, livraison rapide, meilleur vetement">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Nom de votre boutique - Produits de qualité à prix abordables">
+    <meta property="og:description" content="Découvrez une large sélection de produits de qualité à prix abordables sur notre site de e-commerce.">
+    <meta property="og:image" content="../html/index.html">
+    <meta property="og:url" content="https://www.onligneshopcom">
+    <link rel="icon" type="image/png" href="../images/logo.png"> <!--css pour afficher le logo sur le navigateur-->
+    <title>onligne shop</title>
+   <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="..\css\boutique.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="..\js\connect.js"  async></script>
+    
+</head>
+
+<body>
+    <header>
+        <a href="../html/boutique.html" class="logo"><img src="../images/logo.png" alt="logo"/></a>
+        <ul class="navbar">
+            <li><a href="../front/html/boutique.html" class="active">accueil</a></li>
+            <li>
+                <a href="../html/homme.html">hommes<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="submenu">
+                    <li><a href="../html/vetements_homme.html">Vêtements<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/chaussures_homme.html">Chaussures<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/accessoires_homme.html">Accessoires<i class="ri-arrow-right-line"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../html/femme.html">femmes<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="submenu">
+                    <li><a href="../html/vetements_femme.html">Vêtements<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/chaussures_femme.html">Chaussures<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/accessoires_femme.html">Accessoires<i class="ri-arrow-right-line"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../html/enfant.html">enfants<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="submenu">
+                    <li><a href="../html/vetements_enfant.html">Vêtements<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/chaussures_enfant.html">Chaussures<i class="ri-arrow-right-line"></i></a></li>
+                    <li><a href="../html/accessoires_enfant.html">Accessoires<i class="ri-arrow-right-line"></i></a></li>
+                </ul>
+            </li>
+            <li><a href="../html/propos.html">a propos</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="icons">
+            <a href="../html/search.html"><i class="ri-search-line"></i></a>
+            <i class="ri-user-line"></i>
+            <a href="../html/cart.html"><i class="ri-shopping-cart-line"><span id="nbr">0</span></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+         <div class="connect">
+             <div class="form-connect sign-up">
+                 <form action="#">
+                    <h1> s'inscrire</h1>
+                   
+                    <div class="entrer">
+                        <input type="text" placeholder="User Name"  id="name"> required>
+                    </div>
+                    <div class="entrer">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="entrer">
+                     <input type="password" placeholder="password" id="password" required>
+                     <i class="ri-eye-close-fill"></i>
+                    </div>
+                   <div class="entrer"> Confirmer le mots de passe:<br>
+                     <input type="password" placeholder=" Confirm password"></div>
+                     
+                 <button type="submit" id="sign-up">s'inscrire</button>
+                 <div class="reseau">
+                     <i class="ri-facebook-circle-line"></i>
+                     <i class="ri-google-fill"></i>
+                     <i class="ri-linkedin-box-fill"></i>
+                 </div>
+                 </form>
+             </div>
+
+               <div class="form-connect login-form">
+                   <form action="#">
+                       <h1>se connecter</h1>
+                       <div class="entrer">
+                           <input type="text" placeholder="User Name"  id="name" required >
+                       </div>
+                       <div class="entrer">
+                        <input type="password" placeholder="password" id="password" required>
+                        <i class="ri-eye-close-fill"></i>
+                       </div>
+                      <div class="remember">
+                        <div><input type="checkbox">Memoriser </div>
+                        <a href="#"> mots de passe oublié?</a> 
+                    </div>
+
+                    <button type="submit" id="login">connecter</button>
+                    <div class="reseau">
+                        <i class="ri-facebook-circle-line"></i>
+                        <i class="ri-google-fill"></i>
+                        <i class="ri-linkedin-box-fill"></i>
+                    </div>
+                   </form>
+             </div>
+
+             <div class="toggle-container">
+                 <div class="toggle">
+
+                    <div class="toggle-panel sms-left">
+                        <div class="logo-form"><img src="../images/logo.png" alt="logo" ></div>
+                        <p> avez vous deja un compte ?<br> connecter vous et acceder a votre espace. </p><br>
+                        <button>Se connecter <i class="ri-arrow-right-line"></i></button>
+                    </div>
+
+                     <div class="toggle-panel sms-form">
+                         <div class="logo-form"><img src="../images/logo.png" alt="logo" ></div>
+                         <p>Vous n'avez pas encore de compte? <br>inscrivez vous et rejoinez notre univers. </p><br>
+                         <button>S'inscrire <i class="ri-arrow-right-line"></i></button>
+                     </div> 
+                </div>
+            </div>  
+         </div>
+     
+
+    <div class="boutique-img">
+          <div class="bgsms"> l'art de l'expression</div><div class="coversms">vestimentaire</div>
+     <div class="state">
+         <div><span class="state1">nombres de visites</span><span class="state1n">1</span></div>
+         <div><span class="state1">nombres de satisfactions </span><span class="state1n">1</span></div>
+   
+    </div>
+
+        </div>
+
+     
+         <h2>articles <span>hommes</span></h2>
+
+     <div class="articles" id="arcticles">
+         <!-- <div id="article-content">
+            <div id="content-img">
+                <img src="../images/bt1.jpg" alt="">
+           </div>
+           <div id="titre">collection douala</div>
+            <p> le t-shirt est 100% coton . le concepte represente douala </p>
+            <div id="article-footer"> -->
+              <!-- <div id="prix">5000cfs</div> -->
+              <!-- <div id="voir">voir</div>
+            </div> -->
+        <!-- </div> -->
+    </div>
+     <div class="more">
+          <a href="../html/homme.html">voir plus <i class="ri-arrow-right-line"></i></a>
+     </div>
+
+
+     
+     <h2>articles <span>femmes</span></h2>
+
+     <div class="articlesf" id="articlesf">
+        <!-- <div id="article-content">
+            <div id="content-img">
+                <img src="../images/bt1.jpg" alt="">
+           </div>
+           <div id="titre">collection douala</div>
+            <p> le t-shirt est 100% coton . le concepte represente douala </p>
+            <div id="article-footer"> -->
+              <!-- <div id="prix">5000cfs</div> -->
+              <!-- <div id="voir">voir</div>
+            </div> -->
+        <!-- </div> -->
+    
+   </div>
+    <div class="more">
+         <a href="../html/femme.html">voir plus <i class="ri-arrow-right-line"></i></a>
+    </div>
+
+
+     
+     <h2>articles <span>enfants</span></h2>
+
+     <div class="articlesE">
+           <!-- <div id="article-content">
+            <div id="content-img">
+                <img src="../images/bt1.jpg" alt="">
+           </div>
+           <div id="titre">collection douala</div>
+            <p> le t-shirt est 100% coton . le concepte represente douala </p>
+            <div id="article-footer"> -->
+              <!-- <div id="prix">5000cfs</div> -->
+              <!-- <div id="voir">voir</div>
+            </div> -->
+        <!-- </div> -->
+   </div>
+    <div class="more">
+         <a href="../html/enfant.html">voir plus <i class="ri-arrow-right-line"></i></a>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>À Propos</h2>
+                <p>Notre boutique en ligne propose une large sélection de produits de qualité à des prix compétitifs. Nous nous engageons à offrir un excellent service client.</p>
+            </div>
+           
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:contact@votresite.com">contact@onligneshop.com</a></p>
+                <p>Téléphone: <a href="tel:+237655288528">+237 655 28 85 28</a></p>
+                <p>Adresse: Rue BARNABE Akwa, Douala Cameroun</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Suivez-Nous</h2>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-tiktok-fill"></i></a>
+                    <a href="#" target="_blank"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p> 2023 tous droits sont reservés par le FUHRER ROSSI  &copy</p>
+        </div>
+        </footer>
+    
+    <script>
+
+function statistique() {
+    
+        let states = document.querySelectorAll(".state1n");
+        let num = 1 ;
+
+        // Utiliser setInterval pour afficher les nombres un par un
+       
+        const numberInterval = setInterval(() => {
+            for(let state of states){
+            if (num < 100) {
+                state.innerHTML = `<div class="number">${num}</div>`;
+                num++;
+            } else {
+                clearInterval(numberInterval); // Arrête l'intervalle une fois que 100 est atteint
+            }
+        }
+        }, 500); // Affiche un nombre toutes les secondes
+    
+
+}
+
+statistique();
+// /* decoding="async" entre en jeu pour donner une indication au navigateur d'essayer de télécharger l'image 
+//                   et en même temps de télécharger une autre partie du site */
+                  
+      // Ici, vous pouvez récupérer les détails du produit à partir d'une API ou d'une base de données
+      function getproduit() {
+            let produits = localStorage.getItem("listeproduit");
+            if(produits == null){
+              return  [];
+            }else{  
+            return  JSON.parse(produits); 
+          }
+        }
+        
+        const data = getproduit();
+    let i = 0;
+    let j = 0;
+    let k = 0;
+    for (produit of data) {
+        if(produit.genre == "homme" && i < 4){
+        const card = document.querySelector(".articles");
+
+        card.innerHTML += `    <div class="article-content">
+             <div class="content-img">
+                 <img src=${produit.src} decoding="async" alt="">
+            </div>
+            <div class="titre">${produit.nom}</div>
+             <p> ${produit.description} </p>
+             <div class="article-footer">
+               <div class="prix">${produit.prix} fcfa</div>
+               <div class="voir"  data-product-id=${produit.id}>voir</div>
+             </div>
+            </div>     
+            `;
+            i++;
+        } 
+        if(produit.genre == "femme" && j < 4){
+          const cardf = document.querySelector(".articlesf");
+
+          cardf.innerHTML += `    <div class="article-content">
+             <div class="content-img">
+                 <img src=${produit.src} decoding="async" alt="">
+            </div>
+            <div class="titre">${produit.nom}</div>
+             <p> ${produit.description} </p>
+             <div class="article-footer">
+               <div class="prix">${produit.prix} fcfa</div>
+               <div class="voir"  data-product-id=${produit.id}>voir</div>
+             </div>
+            </div>   
+            `;
+            j++;
+        }
+        if(produit.genre == "enfant" && k < 4){
+          const cardE = document.querySelector(".articlesE");
+
+          cardE.innerHTML += `    <div class="article-content">
+             <div class="content-img">
+                 <img src=${produit.src} decoding="async" alt="">
+            </div>
+            <div class="titre">${produit.nom}</div>
+             <p> ${produit.description} </p>
+             <div class="article-footer">
+               <div class="prix">${produit.prix} fcfa</div>
+               <div class="voir"  data-product-id=${produit.id}>voir</div>
+             </div>
+            </div>  
+            `;
+            k++;
+        }    
+
+       
+    };
+
+        ScrollReveal().reveal('h2', { duration: 2000 ,delay: 250, reset: true  });
+        ScrollReveal().reveal('.article-content', { interval: 500,  reset: true  });
+       
+        // js pour le carrousel 
+      
+        document.querySelectorAll('.voir').forEach(button => {
+    button.addEventListener('click', function() {
+        const productId = this.getAttribute('data-product-id');
+        // Redirige vers la page de détails du produit
+        window.location.href = `product-details.html?id=${productId}`;
+    });
+});
+
+    // code pour afficher le nombre d'articles dans le panier 
+function getnbre() {
+        let nbre = localStorage.getItem("nbre");
+        if(nbre == null){
+          return  [];
+        }else{  
+        return  JSON.parse(nbre); 
+      }
+    }
+    
+      function affichenbre(){
+        const nbrProduitsCart = document.querySelector("#nbr");
+        let nbrProduits = getnbre();
+         nbrProduitsCart.innerHTML = nbrProduits; // Met à jour l'affichage
+        }
+        affichenbre() ;  
+  
+    
+ </script>
+  <script src="..\js\script.js" async></script>
+  <script src="..\js\addcart.js" async></script>
+  <script src="..\js\produits.js" async></script>
+  <script src="..\js\connect.js" async></script>   
+  
+ 
+ 
+
+
+</body>
+</html>
