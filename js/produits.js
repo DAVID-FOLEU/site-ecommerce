@@ -302,7 +302,7 @@ description: "robe soirée debardeur ideal pendant l'été"
     couleurs: [
         { name: "red", dataImage: "../images/1740187984586.jpg" },
         { name: "black", dataImage: "../images/1740187991834.jpg" },
-        { name: "pink", dataImage: "../images/1740187988361.jpg" }
+        { name: "pink", dataImage: "images/1740187988361.jpg" }
     ],
     
     tailles:["39","40"],
@@ -354,7 +354,7 @@ description: "robe soirée debardeur ideal pendant l'été"
         couleurs: [
             { name: "brown", dataImage: "../images/1741304735484.jpg" },
             { name: "blue", dataImage: "../images/1741304733368.jpg" },
-            { name: "green", dataImage: "../images/1741304737696.jpg" }
+            { name: "green", dataImage: "images/1741304737696.jpg" }
         ],
         
         tailles:["mini"],
