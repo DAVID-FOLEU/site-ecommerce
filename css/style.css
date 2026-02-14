@@ -13,6 +13,10 @@ html.sr .load-hidden {
 }
 
 
+.icons .ri-user-line {
+    display: none;
+}
+
 :root{
     --bg-color: #ffffff;
     --text-color: #0f172a;
@@ -786,6 +790,9 @@ footer {
         justify-content: space-between;
     }
     
+    .state1 {
+        font-size: 1.2rem;
+    }
 
     #img{
       height: 140px;
@@ -915,6 +922,11 @@ footer {
         gap: 27rem;
         padding: 10px 10px;
     }
+
+
+    .footer-bottom {
+    margin-top: 1rem;
+}
 }
 /* fin responsive 712px */
 
@@ -930,6 +942,10 @@ footer {
     
         padding: 8px; 
     }
+
+     .footer-bottom {
+    margin-top: 1rem;
+}
 }
 
 @media(max-width:631px){ 
@@ -1023,6 +1039,10 @@ footer {
     background-color: rgb(17, 17, 17); /* Couleur de fond du sous-menu */
     }
 
+ .footer-bottom {
+    margin-top: 1rem;
+}
+
 }
 /* fin responsive 631px */
 
@@ -1035,7 +1055,7 @@ footer {
         display:flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 14rem;
+        gap: 19rem;
         width: 100%;
         padding: 0px;
     }
@@ -1050,7 +1070,7 @@ footer {
         display:flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 12.8rem;
+        gap: 15rem;
         width: 100%;
         padding: 0px;
     }
@@ -1337,13 +1357,15 @@ footer {
 }
 
 
+ .footer-bottom {
+    margin-top: 1rem;
+}
+
 .footer-bottom p{
    font-size:1rem;
 }
 
 
-    
-   
 }
 /* fin responsive 480px */
 
@@ -1355,7 +1377,7 @@ footer {
         display:flex;
         justify-content: flex-start;
         width: 100%;
-        gap:9rem;
+        gap:12rem;
        align-items: center;
     }
 
@@ -1406,6 +1428,10 @@ footer {
  font-size: 20px;
 }
 
+
+ .footer-bottom {
+    margin-top: 1rem;
+}
 
 .footer-bottom p{
     font-size:0.8rem;
@@ -1603,7 +1629,7 @@ footer {
         justify-content: flex-start;
         width: 100%;
         z-index: 100;
-        gap:6rem;
+        gap:9rem;
        
     }
     header.sticky{
@@ -1766,6 +1792,10 @@ footer {
 
 .contact p{
     width: 19rem;
+}
+
+ .footer-bottom {
+    margin-top: 1rem;
 }
 
 .footer-bottom p{
