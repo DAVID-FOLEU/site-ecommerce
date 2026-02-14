@@ -684,6 +684,7 @@ h2{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 13px; /* Espace entre les éléments de la grille */
         padding: auto; /* Espace intérieur de la grille */
       align-items: center;

@@ -217,7 +217,7 @@ body{
     #proposheader{
         display:flex;
         justify-content: flex-start;
-        gap: 33rem;
+        gap: 33.5rem;
         padding: 10px 10px;
     }
     
@@ -366,7 +366,7 @@ body{
         justify-content: flex-start;
         width: 100%;
        margin-bottom: 3rem;
-        gap: 6rem;
+        gap: 9.5rem;
     }
 
     .about{
@@ -444,13 +444,20 @@ body{
     }
 
     
-        
-
 }
 
 
+@media(max-width:360px){
 
-
+    header {
+        padding: auto;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+       margin-bottom: 3rem;
+        gap: 8.5rem;
+    }
+}
 
 
 

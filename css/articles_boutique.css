@@ -195,8 +195,11 @@ h2{
     
     .articles , .articlesf , .articlesE{
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax( 9rem, 1fr)); /* 4 colonnes de largeur égale */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+         justify-content: center;
+        /* grid-template-columns: repeat(auto-fit, minmax( 9rem, 1fr)); 4 colonnes de largeur égale */
         gap: 16px; /* Espace entre les éléments de la grille */
         padding: 5px; /* Espace intérieur de la grille */
       gap: 16px; /* Espace entre les éléments de la grille */
