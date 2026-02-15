@@ -486,8 +486,8 @@ h2{
 .articles , .articlesf , .articlesE{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( 14rem, 1fr)); /* 4 colonnes de largeur égale */
-    gap: 16px; /* Espace entre les éléments de la grille */
+    grid-template-columns: repeat(auto-fit, minmax( 13rem, 1fr)); /* 4 colonnes de largeur égale */
+    gap: 8px; /* Espace entre les éléments de la grille */
     padding: 7px; /* Espace intérieur de la grille */
   align-items: center;
      /* gap:1rem; */
@@ -497,7 +497,7 @@ h2{
 }
 
 .article-content{
-    width: 15rem;       
+    width: 13rem;       
 }
 
 .boutique-img{
@@ -557,7 +557,7 @@ h2{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 13px; /* Espace entre les éléments de la grille */
+        gap: 8px; /* Espace entre les éléments de la grille */
         padding: 5px; /* Espace intérieur de la grille */
       align-items: center;
          /* gap:1rem; */
@@ -684,8 +684,8 @@ h2{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 13px; /* Espace entre les éléments de la grille */
+        /* justify-content: center; */
+        gap: 8px; /* Espace entre les éléments de la grille */
         padding: auto; /* Espace intérieur de la grille */
       align-items: center;
          /* gap:1rem; */

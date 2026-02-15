@@ -1086,7 +1086,7 @@ footer {
     .navbar{
         z-index:10;
         position: absolute;
-        top:97px;
+        top:86px;
         right: 0px;
         display:flex;
         flex-direction: column;
@@ -1647,7 +1647,7 @@ footer {
     .navbar{
         z-index:100000;
         position: absolute;
-        top:89px;
+        top:86px;
        
     }
 
