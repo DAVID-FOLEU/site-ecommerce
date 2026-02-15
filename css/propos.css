@@ -369,7 +369,10 @@ body{
         gap: 9.5rem;
     }
 
-  
+   .open{
+        width: 60vw;
+    }
+
     .navbar {
         z-index: 10;
         position: absolute;
